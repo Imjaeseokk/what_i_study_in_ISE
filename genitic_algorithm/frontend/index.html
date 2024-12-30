@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Optimization Visualization</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <h1>What is Genetic Algorithm</h1>
+    <form id="parameter-form">
+      <label>
+        Crossover Probability:
+        <input type="number" id="crossover-probability" value="0.01" step="0.01" required>
+      </label>
+      <label>
+        Mutation Probability:
+        <input type="number" id="mutation-probability" value="0.01" step="0.01" required>
+      </label>
+      <br>
+      <label>
+        Initial Point X:
+        <input type="text" id="initial-point" value="1.0" required>
+      </label>
+      <button type="submit">Start</button>
+    </form>
+    <button id="next-step" disabled>Next Step</button>
+    <div id="visualization"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
